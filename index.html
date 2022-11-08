@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- todos los formularios deben de ir con la etiqueta formulario-->
+    <form action="">
+      <!-- Accion del formulario a enviar como endpoint Url de envio-->
+      <label for="Nombre">
+        <!-- Nombre del label, casilla-->
+        <span>Cual es tu Nombre</span>
+        <!-- Muestra el texto de la casilla-->
+        <!-- Regisyta la entrada de tipo, con el id  de la casilla for
+             placeholder es para agragar una breve descripcion par ala señalizacion del campo-->
+        <input type="text" id="Nombre" placeholder="Tu nombre" />
+      </label>
+      <span>Cual es tu Apellido</span>
+      <label for="Apellido">
+        <input type="text" id="Apellido" placeholder="Tu Apellido" />
+      </label>
+      <span>Cual es tu fecha de Nac</span>
+      <label for="Fecha_Nac">
+        <input type="date" id="Fecha_Nac" placeholder="Tu fecha de nac" />
+      </label>
+      <span>Cual es tu horario de trabajo </span>
+      <label for="Horario de Trabajo">
+        <input type="time" id="Horario de Trabajo" placeholder="Tu Horario" />
+      </label>
+    </form>
+
+    <main>
+      <section>
+        <figure>
+          <!-- Etiqueta que le dice al navegador que llevara una o varias imagenes-->
+          <img src="" alt="" />
+          <!-- ALT, Agrega una descripcion de la imagen en caso de error o que no se muestre -->
+          <figcaption>esta es una imagen de un perrito</figcaption>
+          <!-- Muestra una descripcion de la imagen, esta etiqueta es para 
+        eso -->
+        </figure>
+
+        <section>
+          <!--Ruta del video a reproducir, controls le agrega los controles al video-->
+          <!-- preload en auto, precarga el video para que no tenga que cargar despues-->
+          <!-- Etiqueta source permite que este disponibles varios formatos del video 
+                Para que el navedor escoja el que entienda-->
+          <video src="" controls preload="auto">
+            <source src="" />
+            <source src="" />
+            <source src="" />
+          </video>
+        </section>
+
+        <!-- Usando DIV y P de parrafo es una manera no semantica de utilizar html para presentar una web-->
+        <figure>
+          <div>
+            <img src="" alt="" />
+          </div>
+          <p>Esta es una imagen de un perrito</p>
+        </figure>
+      </section>
+    </main>
+  </body>
 </html>
